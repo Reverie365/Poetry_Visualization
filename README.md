@@ -36,3 +36,10 @@ node index.js
 npm install
 npm run dev
 ```
+
+## npm run build 出现 JavaScript heap out of memory解决方法
+
+* Linux: export NODE_OPTIONS="--max-old-space-size=4096"
+* Windows: set NODE_OPTIONS=--max-old-space-size=4096
+
+> Nginx部署项目参考：[https://blog.51cto.com/AmbitionGarden/14111626](https://blog.51cto.com/AmbitionGarden/14111626)
